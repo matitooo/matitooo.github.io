@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Mattia D&#39;Agostini</title>
+    <link>https://matitooo.github.io/</link>
+    <description>Recent content on Mattia D&#39;Agostini</description>
+    <generator>Hugo -- 0.152.2</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 31 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://matitooo.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A GNN implementation for ASD diagnosys </title>
+      <link>https://matitooo.github.io/projects/paper2/</link>
+      <pubDate>Sun, 31 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://matitooo.github.io/projects/paper2/</guid>
+      <description>For the SoSe 2025 project on Convolutional Graph Neural Networks, I developed a population-based GNN to classify fMRI scans from the ABIDE dataset, achieving slightly better AUC and F1 scores than a comparable CNN model. The results highlight the advantages of a graph-based approach for this task.</description>
+    </item>
+    <item>
+      <title>Income Prediction using different Machine Learning approaches</title>
+      <link>https://matitooo.github.io/projects/paper3/</link>
+      <pubDate>Mon, 30 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://matitooo.github.io/projects/paper3/</guid>
+      <description>For the final project in the SoSe25 Machine Learning and Intelligent Data Analysis class, I analyzed different Machine Learning Approaches to solve Kaggle&amp;rsquo;s Income Prediction Challenge.</description>
+    </item>
+    <item>
+      <title>Sarcasm Detection using a combination of LSTM, attention and manual features.</title>
+      <link>https://matitooo.github.io/projects/paper1/</link>
+      <pubDate>Mon, 31 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://matitooo.github.io/projects/paper1/</guid>
+      <description>For the final project in the ANLP W.S. 2024 class, my group IsThisLoss and I developed LSTM and Bi-LSTM models with attention mechanisms and manually extracted linguistic features for sarcasm detection using the SemEval 2022 Task 6 dataset. The models were optimized through Bayesian hyperparameter tuning. Our best models achieved F1 scores of 0.264 and 0.262, highlighting the importance of incorporating external data and linguistic features.</description>
+    </item>
+  </channel>
+</rss>

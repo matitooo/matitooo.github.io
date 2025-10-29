@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Income Prediction using different Machine Learning approaches | Mattia D&#39;Agostini</title>
+<meta name="keywords" content="">
+<meta name="description" content="For the final project in the SoSe25 Machine Learning and Intelligent Data Analysis class, I analyzed different Machine Learning Approaches to solve Kaggle&rsquo;s Income Prediction Challenge.">
+<meta name="author" content="Mattia D&#39;Agostini">
+<link rel="canonical" href="https://matitooo.github.io/projects/paper3/">
+<link crossorigin="anonymous" href="../../assets/css/stylesheet.1b0e989b9a59ea168cea0dad76a3786eb26b8341a2bc21adee5ae0990e7f08e3.css" integrity="sha256-Gw6Ym5pZ6haM6g2tdqN4brJrg0GivCGt7lrgmQ5/COM=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://matitooo.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://matitooo.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://matitooo.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://matitooo.github.io/apple-touch-icon.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://matitooo.github.io/projects/paper3/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript><meta property="og:url" content="https://matitooo.github.io/projects/paper3/">
+  <meta property="og:site_name" content="Mattia D&#39;Agostini">
+  <meta property="og:title" content="Income Prediction using different Machine Learning approaches">
+  <meta property="og:description" content="For the final project in the SoSe25 Machine Learning and Intelligent Data Analysis class, I analyzed different Machine Learning Approaches to solve Kaggle’s Income Prediction Challenge.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="projects">
+    <meta property="article:published_time" content="2025-06-30T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-06-30T00:00:00+00:00">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Income Prediction using different Machine Learning approaches">
+<meta name="twitter:description" content="For the final project in the SoSe25 Machine Learning and Intelligent Data Analysis class, I analyzed different Machine Learning Approaches to solve Kaggle&rsquo;s Income Prediction Challenge.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Projects",
+      "item": "https://matitooo.github.io/projects/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Income Prediction using different Machine Learning approaches",
+      "item": "https://matitooo.github.io/projects/paper3/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Income Prediction using different Machine Learning approaches",
+  "name": "Income Prediction using different Machine Learning approaches",
+  "description": "For the final project in the SoSe25 Machine Learning and Intelligent Data Analysis class, I analyzed different Machine Learning Approaches to solve Kaggle\u0026rsquo;s Income Prediction Challenge.",
+  "keywords": [
+    
+  ],
+  "articleBody": " Download Presentation Code Abstract For the final project of the SoSe25 Machine Learning and Intelligent Data Analysis course, I analyzed different Machine Learning approaches to address Kaggle’s Income Prediction Challenge, which consists in predicting whether an individual earns more than $50K per year based on demographic and sociological data.\nI began with an exploratory data analysis and an evaluation of possible preprocessing strategies. Subsequently, I implemented several Machine Learning models — including Random Forest, SVM, and Logistic Regression — and compared their performance using multiple evaluation metrics. Finally, I used the trained models to predict income labels for the previously unseen subjects.\nA short presentation is provided alongside the project notebook.\nRelated material Kaggle Income Prediction Dataset ",
+  "wordCount" : "117",
+  "inLanguage": "en",
+  "datePublished": "2025-06-30T00:00:00Z",
+  "dateModified": "2025-06-30T00:00:00Z",
+  "author":[{
+    "@type": "Person",
+    "name": "Mattia D'Agostini"
+  }],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://matitooo.github.io/projects/paper3/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Mattia D'Agostini",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://matitooo.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css" integrity="sha384-wcIxkf4k558AjM3Yz3BBFQUbk/zgIYC2R0QpeeYb+TwlBVMrlgLqwRjRtGZiK7ww" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js" integrity="sha384-hIoBPJpTUs74ddyc4bFZSM1TVlQDA60VBbJS0oA934VSz82sBx1X7kSx2ATBDIyd" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"
+  onload="renderMathInElement(document.body);"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false},
+            {left: "\\begin{equation}", right: "\\end{equation}", display: true},
+            {left: "\\begin{equation*}", right: "\\end{equation*}", display: true},
+            {left: "\\begin{align}", right: "\\end{align}", display: true},
+            {left: "\\begin{align*}", right: "\\end{align*}", display: true},
+            {left: "\\begin{alignat}", right: "\\end{alignat}", display: true},
+            {left: "\\begin{gather}", right: "\\end{gather}", display: true},
+            {left: "\\begin{CD}", right: "\\end{CD}", display: true},
+          ],
+          throwOnError : false
+        });
+    });
+</script>
+ 
+
+
+</head>
+
+<body class="" id="top">
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://matitooo.github.io/" accesskey="h" title="Mattia D&#39;Agostini">
+                <img src="https://matitooo.github.io/favicon.ico" alt="" aria-label="logo"
+                    height="18"
+                    width="18">Mattia D&#39;Agostini</a>
+            <div class="logo-switches">
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://matitooo.github.io/projects/" title="Projects">
+                    <span>Projects</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+    <main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Income Prediction using different Machine Learning approaches
+    </h1>
+    <div class="post-meta"><span title='2025-06-30 00:00:00 +0000 UTC'>June 2025</span>&nbsp;&middot;&nbsp;Mattia D'Agostini
+
+</div>
+  </header> 
+  <div class="post-content"><hr>
+<h5 id="download">Download</h5>
+<ul>
+<li><a href="presentation.pdf">Presentation</a></li>
+<li><a href="https://github.com/matitooo/ml-income" target="_blank">Code</a></li>
+</ul>
+<hr>
+<h5 id="abstract">Abstract</h5>
+<p>For the final project of the SoSe25 Machine Learning and Intelligent Data Analysis course, I analyzed different Machine Learning approaches to address Kaggle’s Income Prediction Challenge, which consists in predicting whether an individual earns more than $50K per year based on demographic and sociological data.</p>
+<p>I began with an exploratory data analysis and an evaluation of possible preprocessing strategies. Subsequently, I implemented several Machine Learning models — including Random Forest, SVM, and Logistic Regression — and compared their performance using multiple evaluation metrics. Finally, I used the trained models to predict income labels for the previously unseen subjects.</p>
+<p>A short presentation is provided alongside the project notebook.</p>
+<h5 id="related-material">Related material</h5>
+<ul>
+<li><a href="https://www.kaggle.com/datasets/lodetomasi1995/income-classification" target="_blank">Kaggle Income Prediction Dataset</a></li>
+</ul>
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+</html>
